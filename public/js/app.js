@@ -30236,9 +30236,7 @@ function getData(bestOf) {
 
       for (var i = 0; i < posts.length; i++) {
         var post = posts[i];
-        var news = "<br><a href=\"/post/show/ ".concat(post['id'], " \">click me to show Post</a>");
-        var html = "<li> TITLE: " + post['title'] + " LIKE: " + post['like'] + "</li> ";
-        target.append(html);
+        var news = "<li><a href=\"/post/show/ ".concat(post['id'], " \">\n                               TITLE: ").concat(post['title'], "\n                               GENRE: ").concat(post['genre'], "\n                               LIKE: ").concat(post['like'], "\n                               </a></li> ");
         target.append(news);
       }
     },

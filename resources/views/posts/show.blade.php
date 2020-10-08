@@ -3,11 +3,21 @@
 @section('content')
 
 
-  <ul>
-    <li>{{$post->id}}</li>
-    <li>{{$post->title}}</li>
-    <li>{{$post->genre}}</li>
+<div class="row">
+  <div class="d-flex justify-content-center">
 
-  </ul>
 
+    <ul>
+      <li>ID: {{ $post-> id }}</li>
+      <li>TITLE: {{ $post-> title }}</li>
+      <li>GENRE: {{ $post-> genre }}</li>
+      <li>BODY: {{ $post-> body }}</li>
+      <li>LIKE: {{ $post-> like }}</li>
+      <li>DISLIKE: {{ $post-> dislike }}</li>
+
+    </ul>
+
+  </div>
+
+</div>
 @endsection
