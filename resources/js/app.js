@@ -30,9 +30,11 @@ function getData(bestOf){
 
                 var post = posts[i];
 
-                var html = "<li> TITLE: " + post['title'] +" LIKE: " + post['like'] + "</li>";
+                var news = `<br><a href="/post/show/ ${post['id']} ">click me to show Post</a>`;
+                var html = "<li> TITLE: " + post['title'] +" LIKE: " + post['like'] + "</li> ";
 
                 target.append(html);
+                target.append(news);
 
                 }
               },
