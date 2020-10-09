@@ -7,8 +7,13 @@
     <div class="col-md-12">
       <div class="d-flex justify-content-center">
 
-      
-      <a class="btn btn-danger" href="{{route('posts.index')}}">ENTRA</a>
+        <a class="home-image" href="{{route('posts.index')}}">
+
+
+
+        </a>
+
+
       </div>
     </div>
   </div>

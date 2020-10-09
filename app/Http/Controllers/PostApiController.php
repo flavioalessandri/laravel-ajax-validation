@@ -16,7 +16,7 @@ class PostApiController extends Controller
 
     public function getBestPosts(){
 
-      $posts = Post::where('like', '>', 200) -> get();
+      $posts = Post::where('like', '>', 2000) -> get();
       return response() -> json($posts);
     }
 

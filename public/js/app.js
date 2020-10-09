@@ -30236,7 +30236,7 @@ function getData(bestOf) {
 
       for (var i = 0; i < posts.length; i++) {
         var post = posts[i];
-        var news = "<li><a href=\"/post/show/ ".concat(post['id'], " \">\n                               TITLE: ").concat(post['title'], "\n                               GENRE: ").concat(post['genre'], "\n                               LIKE: ").concat(post['like'], "\n                               </a></li> ");
+        var news = " <div class=\"card col-5 mycard\">\n\n                              <div class=\"card-header\">\n\n\n\n                                <a href=\"/post/show/ ".concat(post['id'], " \">  TITLE: ").concat(post['title'], "  </a>\n\n                              </div>\n\n                              <div class=\"card-body\">\n\n                                  <img src= \" ").concat(post['image'], " \" alt=\"").concat(post['image'], "\">\n\n                                GENRE: ").concat(post['genre'], "\n                                LIKE: ").concat(post['like'], "\n\n                              </div>\n\n                            </div> ");
         target.append(news);
       }
     },

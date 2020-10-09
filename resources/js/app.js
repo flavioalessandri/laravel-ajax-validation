@@ -26,16 +26,30 @@ function getData(bestOf){
               target.html('');
               for (var i = 0; i < posts.length; i++) {
 
-
-
                 var post = posts[i];
 
                 var news =
-                          `<li><a href="/post/show/ ${post['id']} ">
-                               TITLE: ${ post['title']}
-                               GENRE: ${ post['genre']}
-                               LIKE: ${ post['like']}
-                               </a></li> `;
+
+                          ` <div class="card col-5 mycard">
+
+                              <div class="card-header">
+
+
+
+                                <a href="/post/show/ ${post['id']} ">  TITLE: ${ post['title']}  </a>
+
+                              </div>
+
+                              <div class="card-body">
+
+                                  <img src= " ${ post['image']} " alt="${ post['image']}">
+
+                                GENRE: ${ post['genre']}
+                                LIKE: ${ post['like']}
+
+                              </div>
+
+                            </div> `;
 
                 target.append(news);
 

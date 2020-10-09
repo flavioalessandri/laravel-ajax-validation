@@ -6,9 +6,13 @@
 @include('partials.head')
 
   <body>
-      <div class="container">
+      <div class="container-fluid">
 
           @include('partials.header')
+
+    </div>
+
+      <div class="container">
 
         <main>
 
@@ -16,10 +20,13 @@
 
         </main>
 
+      </div>
+
+      <div class="container-fluid">
           @include('partials.footer')
 
-
       </div>
+
 
   </body>
 </html>

@@ -4,20 +4,28 @@
 
 
 <div class="row">
-  <div class="d-flex justify-content-center">
+    <div class="d-flex justify-content-center">
 
+    <div id="post-show" class="card col-8 mycard show">
 
-    <ul>
-      <li>ID: {{ $post-> id }}</li>
-      <li>TITLE: {{ $post-> title }}</li>
-      <li>GENRE: {{ $post-> genre }}</li>
-      <li>BODY: {{ $post-> body }}</li>
-      <li>LIKE: {{ $post-> like }}</li>
-      <li>DISLIKE: {{ $post-> dislike }}</li>
+      <div class="card-header">
+        <h2>TITLE: {{ $post -> title }} </h2>
 
-    </ul>
+        <h4>GENRE: {{ $post-> genre }}</h4>
+      </div>
+
+      <div class="card-body">
+        <img src= "{{ $post-> image }} " alt=" {{$post-> image }}">
+
+        <p>{{ $post -> body }}</p>
+
+        <h6>LIKE: {{ $post-> like }}</h6>
+        <h6>DISLIKE: {{ $post-> dislike }}</h6>
+      </div>
+
+    </div>
 
   </div>
-
 </div>
+
 @endsection

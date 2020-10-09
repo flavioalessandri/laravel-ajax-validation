@@ -10900,11 +10900,71 @@ a.text-dark:focus {
 }
 
 input[type=checkbox] {
-  margin: 50px;
+  margin-left: 30px;
+}
+
+.home-image {
+  margin: 80px 0;
+  width: 100%;
+  height: 600px;
+  background-image: url("/img/home.jpg");
+  background-size: cover;
+  transition: all 0.2 s;
+}
+
+.home-image:hover {
+  transform: scale(1.01);
+  filter: grayscale(90%);
 }
 
 li {
   list-style: none;
   line-height: 2;
+}
+
+#post-index,
+#post-show {
+  margin-top: 40px;
+}
+
+#post-index h1,
+#post-index h2,
+#post-index h3,
+#post-index h4,
+#post-show h1,
+#post-show h2,
+#post-show h3,
+#post-show h4 {
+  font-size: 18px;
+  font-family: "Oswald", sans-serif;
+}
+
+.mycard {
+  margin-bottom: 40px;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.card-header {
+  background-color: #eddcd2 !important;
+}
+
+.show {
+  min-width: 400px;
+}
+
+.card-body {
+  width: 100%;
+}
+
+.card-body > img {
+  width: 100%;
+  height: auto;
+}
+
+footer {
+  min-height: 40px;
+  width: 100%;
+  background-color: #eddcd2 !important;
 }
 
